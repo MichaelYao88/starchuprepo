@@ -1,0 +1,56 @@
+<!-- <ion-view title="Login">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button id="login-button6" class="button button-stable  button-block">Log in</button>
+            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="login-button7" class="button button-positive  button-block button-clear">Or create an account</a>
+        </form>
+    </ion-content>
+</ion-view> -->
+
+<ion-view name="login-view">
+    <ion-content padding="true">
+            <div class="row">
+            <div class="col-33"></div>
+            <div class="centerwidth">
+
+                <div>
+                    <div style="margin-top:80px"></div>
+                    <div class= "center big">Welcome!</div>
+                    <br>
+                    <br>
+                    <br>
+                    <div style = "margin-bottom: 8px">Email</div>
+                    <label class="item item-input item-floating-label" style="border: 1px solid black">
+                        <input type="email" ng-model="data.email">
+                    </label>
+                    <div style = "margin-bottom: 6px;margin-top:9px">Password</div>
+                    <label class="item item-input item-floating-label" style="border: 1px solid black">
+                        <input type="password" ng-model="data.password">
+                    </label>
+                </div>
+
+                <div class="padding">
+                    <br>
+                    <button class="button button-block" style="margin-top:40px;background-color: #11dcad;color:white" ng-click="login()">Log In</button>
+                </div>
+
+                <div class="col-33"></div>
+            </div>
+            <div class="row row-bottom"></div>
+
+        </div>
+
+
+    </ion-content>
+</ion-view>

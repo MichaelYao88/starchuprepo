@@ -1,0 +1,65 @@
+<!-- <ion-view title="Login">
+    <ion-content padding="true" class="has-header">
+        <form class="list">
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button id="login-button6" class="button button-stable  button-block">Log in</button>
+            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="login-button7" class="button button-positive  button-block button-clear">Or create an account</a>
+        </form>
+    </ion-content>
+</ion-view> -->
+
+<ion-view name="login-view" title="Register">
+    <ion-content padding="true" class="bg">
+    <header><h2 class="title">Register New Slicer</h2></header>
+    <div class="list">
+      <form stripe-form="stripeCallback" name="checkoutForm">
+      <label class="item item-input item-floating-label">
+        <span class="input-label">First Name</span>
+        <input type="text" placeholder="First Name" ng-model="data.first_name">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Last Name</span>
+        <input type="text" placeholder="Last Name" ng-model="data.last_name">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Email</span>
+        <input type="email" placeholder="Email" ng-model="data.email">
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Password</span>
+        <input type="password" placeholder="Password" ng-model="data.password">
+      </label>
+
+
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Card Number</span>
+        <input type="tel" ng-model="number" placeholder="Card Number" payments-format="card" payments-validate="card" name="card" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">Expiration</span>
+        <input type="tel" ng-model="expiry" placeholder="Expiration" payments-format="expiry" payments-validate="expiry" name="expiry" />
+      </label>
+      <label class="item item-input item-floating-label">
+        <span class="input-label">CVC</span>
+        <input type="tel" ng-model="cvc" placeholder="CVC" payments-format="cvc" payments-validate="cvc" name="cvc" />
+      </label>
+      <button class="button button-block button-calm" >Register</button>
+  </form>
+    <form action="#/login">
+      <button class="button button-block button-assertive" >Go Back</button>
+    </form>
+</div>
+
+
+  </ion-content>
+</ion-view>

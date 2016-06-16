@@ -1,0 +1,32 @@
+<ion-view title="Payment Confirmation">
+    <ion-side-menus enable-menu-with-back-views="true">
+    <ion-content padding="true" class="bg">
+        <ion-refresher
+            pulling-text="Pull to Refresh your Bill"
+            on-refresh="doRefresh(bill.id)">
+        </ion-refresher>
+        <header>
+            <h2>Payment Received!</h2>
+            <h4>You paid for:</h4>
+        </header>
+        <ion-list ng-controller="PopupCtrl" ng-controller="ListCtrl">
+            <ul class="list">
+                <li class="item item-button-right large-item" ng-repeat="item in transaction.items_array">
+                 {{item.item_description}}<br>
+                 Paid: {{textPrice(item.int_price, transaction.amount, transaction.total) | currency}}
+                    <button class="button button-balanced block" ng-click="guestPopup(item.int_price,transaction.amount,transaction.total)">
+                        <i class="icon ion-ios-chatboxes"></i>
+                    </button>
+                </li>
+            </ul>
+        </ion-list>
+        <div class = "total">
+            <h3>Total: {{(parseFloat(transaction.amount)/100) | currency}}</h3>
+            <h4>Tip: {{tip(transaction.amount,transaction.total) }}%</h4>
+        </div>
+
+    </ion-content>
+
+</ion-view>
+
+

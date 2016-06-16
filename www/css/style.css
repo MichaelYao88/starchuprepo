@@ -1,0 +1,135 @@
+/* Empty. Add your own CSS if you like */
+* {
+  font-family: arial
+}
+
+.mapground{
+  background-image: url("http://i.imgur.com/x9lFd7z.png")
+}
+
+.bg {
+  background-image: url("/img/bwrest.JPG");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header {
+  text-align: center;
+  color: #fff;
+}
+
+header img {
+  width: 100%;
+  padding-bottom: 10px;
+}
+.centerwidth{
+  width:750px;
+}
+
+.title {
+  color: #000;
+  font-weight: bold;
+}
+
+.list {
+  background-color: rgba(255,255,255,0.8)
+}
+
+.padding {
+  background-color: rgba(255,255,255,0.5);
+}
+
+
+.popup-vertical-buttons button
+{
+    min-width: 100%;
+    margin-bottom: 5px;
+}
+.popup-vertical-buttons .popup-buttons
+{
+    display: block;
+}
+
+.center {
+  display: relative;
+  margin-left: 33%;
+ }
+
+ .big {
+  font-size: 180%;
+ }
+
+.total {
+  margin: 20px 0;
+  color: #000;
+  border: double 10px #ccc;
+  padding: 5px;
+  background-color: rgba(255,255,255,0.6);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.less-padding h2 {
+font-size: 1.62em;
+color: white;
+}
+
+.total h3, .total h4 {
+  color: black;
+}
+
+.range {
+  margin-bottom: 10px;
+  background-color: rgba(255,255,255,0.8);
+  color: #000;
+}
+
+a .item-content {
+  background-color: #00A6FF;
+}
+
+.translist h1 {
+  font-size: 24px;
+}
+
+.item h3 {
+  font-size: 12px;
+}
+
+ .login-head {
+  padding-bottom: 20px;
+ }
+
+ .gray {
+  background: transparent;
+ }
+
+ .grey {
+  color: gray;
+ }
+
+ .less-padding{
+  padding: .4em;
+  border-radius: 4px;
+ }
+
+ .icon h4{
+
+ }
+
+.less-margin{
+  padding: 0;
+  margin-top: 0em;
+  margin-bottom: .4em;
+  margin-left: -1em;
+  margin-right: 1.2em;
+  border-radius: 4px;
+}
+
+.restName {
+  width: 45%
+}
+
+
+
+
